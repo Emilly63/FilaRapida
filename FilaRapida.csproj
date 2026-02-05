@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Adicione esta linha para ignorar warnings -->
+    <NoWarn>CS8618;CS8603;CS8602;CS8600;CS8625</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmRelatorios.Designer.cs">
+      <DependentUpon>frmRelatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

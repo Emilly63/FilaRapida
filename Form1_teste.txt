@@ -1,0 +1,6 @@
+﻿// No método AbrirFormProdutos() do Form1.cs, substitua por:
+private void AbrirFormProdutos()
+{
+    var form = new FilaRapida.Forms.frmProdutosTeste();
+    form.Show();
+}
